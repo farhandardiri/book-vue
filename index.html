@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar Vue</title>
+    <!-- <script src="lib/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ message }}</h1>
+    </div>
+    <script type="text/javascript">
+    var vm= new Vue({
+        data:{
+            message :'Hello Word'
+        },
+    })
+    vm.$mount('#app')
+    vm.message = "Wow reaktif ya"
+    </script>
+</body>
+</html>
